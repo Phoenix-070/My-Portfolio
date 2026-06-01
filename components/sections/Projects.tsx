@@ -79,19 +79,19 @@ export function Projects() {
 
                 <div className="relative z-20 h-full p-8 flex flex-col justify-between">
                   <div>
-                    <div className="text-primary font-mono text-xs uppercase tracking-widest mb-2 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                    <div className="text-primary font-mono text-xs uppercase tracking-widest mb-2 transform translate-y-0 md:translate-y-2 md:group-hover:translate-y-0 transition-transform duration-500">
                       {project.category}
                     </div>
-                    <h3 className="text-2xl font-bold font-heading mb-3 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500 delay-75 line-clamp-3">
+                    <h3 className="text-2xl font-bold font-heading mb-3 transform translate-y-0 md:translate-y-2 md:group-hover:translate-y-0 transition-transform duration-500 delay-75 line-clamp-3">
                       {project.title}
                     </h3>
                   </div>
                   
                   <div className="flex flex-col justify-end">
-                    <p className="text-gray-400 text-sm leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-150">
+                    <p className="text-gray-400 text-sm leading-relaxed mb-6 opacity-100 md:opacity-0 md:group-hover:opacity-100 transform translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-all duration-500 delay-150">
                       {project.description}
                     </p>
-                    <div className="flex flex-wrap gap-2 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-200">
+                    <div className="flex flex-wrap gap-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transform translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-all duration-500 delay-200">
                       {project.tech.map((t) => (
                         <span key={t} className="px-3 py-1 bg-black/20 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-full text-xs text-foreground">
                           {t}
@@ -105,7 +105,7 @@ export function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="absolute top-6 right-6 w-10 h-10 rounded-full bg-black/10 dark:bg-white/10 flex items-center justify-center text-foreground dark:text-white opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 hover:bg-primary z-30"
+                      className="absolute top-6 right-6 w-10 h-10 rounded-full bg-black/10 dark:bg-white/10 flex items-center justify-center text-foreground dark:text-white opacity-100 md:opacity-0 md:group-hover:opacity-100 transform translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-all duration-500 hover:bg-primary z-30"
                       onClick={(e) => e.stopPropagation()}
                     >
                       <GitBranch className="w-5 h-5" />

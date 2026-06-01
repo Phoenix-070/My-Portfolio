@@ -58,14 +58,14 @@ export function Hero() {
         </FadeIn>
 
         <FadeIn delay={3.1} direction="up">
-          <div className="flex gap-6">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center w-full sm:w-auto px-6 sm:px-0">
             <Magnetic>
-              <button className="px-8 py-4 bg-primary text-white text-sm font-bold uppercase tracking-widest hover:bg-foreground hover:text-background transition-colors rounded-full shadow-[0_0_15px_rgba(99,102,241,0.4)] hover:shadow-[0_0_25px_rgba(255,255,255,0.6)]">
+              <button className="w-full sm:w-auto px-8 py-4 bg-primary text-white text-sm font-bold uppercase tracking-widest hover:bg-foreground hover:text-background transition-colors rounded-full shadow-[0_0_15px_rgba(99,102,241,0.4)] hover:shadow-[0_0_25px_rgba(255,255,255,0.6)]">
                 View Work
               </button>
             </Magnetic>
             <Magnetic>
-              <button className="px-8 py-4 border border-foreground/20 dark:border-white/20 text-foreground dark:text-white text-sm font-bold uppercase tracking-widest hover:border-primary transition-colors rounded-full">
+              <button className="w-full sm:w-auto px-8 py-4 border border-foreground/20 dark:border-white/20 text-foreground dark:text-white text-sm font-bold uppercase tracking-widest hover:border-primary transition-colors rounded-full">
                 Contact Me
               </button>
             </Magnetic>
