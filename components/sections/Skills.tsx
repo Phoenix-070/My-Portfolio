@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import { ScratchCard } from "@/components/animations/ScratchCard";
 
 const skills = [
-  "Large Language Models", "Generative AI", "TypeScript", "Python", "PyTorch", 
-  "Next.js", "React", "WebGL", "Three.js", "TailwindCSS", 
-  "Node.js", "GraphQL", "PostgreSQL", "Docker", "AWS", "CUDA"
+  "Large Language Models", "Generative AI", "TypeScript", "Python", "PyTorch",
+  "Next.js", "React", "HTML, CSS & JavaScript", "Three.js", "TailwindCSS",
+  "Node.js", "GraphQL", "SQL", "MongoDB", "AWS", "CUDA"
 ];
 
 export function Skills() {
@@ -19,7 +19,7 @@ export function Skills() {
             The <span className="text-primary">Arsenal</span>
           </h2>
         </FadeIn>
-        
+
         <FadeIn delay={0.2}>
           <p className="text-gray-400 max-w-2xl text-center mx-auto mb-20 leading-relaxed text-lg">
             A versatile toolkit spanning full-stack engineering, 3D graphics, and advanced machine learning ecosystems.
@@ -37,16 +37,16 @@ export function Skills() {
             </FadeIn>
           ))}
         </div>
-        
+
         {/* Abstract floating background elements to represent skills orbiting */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] md:w-[800px] h-[600px] md:h-[800px] pointer-events-none opacity-20">
-          <motion.div 
-            animate={{ rotate: 360 }} 
+          <motion.div
+            animate={{ rotate: 360 }}
             transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
             className="w-full h-full rounded-full border border-primary/30 border-dashed"
           />
-          <motion.div 
-            animate={{ rotate: -360 }} 
+          <motion.div
+            animate={{ rotate: -360 }}
             transition={{ duration: 70, repeat: Infinity, ease: "linear" }}
             className="absolute top-16 left-16 right-16 bottom-16 rounded-full border border-purple-500/20"
           />

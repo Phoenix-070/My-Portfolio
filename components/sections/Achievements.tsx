@@ -19,6 +19,11 @@ const hackathons = [
     position: "Participant",
     description: "Participated in the Standard Chartered Hackathon, building innovative and impactful solutions.",
   },
+  {
+    title: "Guidewire Hackathon",
+    position: "Top 5 Finalist",
+    description: "Secured a position as a Top 5 Finalist in the Guidewire Hackathon.",
+  },
 ];
 
 const publications = [
